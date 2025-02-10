@@ -94,10 +94,9 @@ jobs:
         cd build && ninja
     - uses: actions/upload-artifact@v4
       with:
-      name: aseprite
-      path: |
+        name: aseprite
+        path: |
          D:/a/aseprite/aseprite/build/bin/data
          D:/a/aseprite/aseprite/build/bin/aseprite.exe
-        export ASEPRITE=$PWD/build/bin/aseprite
-        cd tests
-        $XVFB bash run-tests.sh
+
+
